@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plano de estudo de 7 semanas para aprender Java 17 e Spring Boot com o livro Livro de Back-end Java.">
+    <meta name="keywords" content="Java, Spring Boot, programação, estudo, back-end, plano de estudo">
+    <meta name="author" content="Marcos Oliveira">
+    <title>Plano de Estudo: Java Moderno com Spring Boot</title>
+    <base href="/marcosrmo/java-study-plan/">
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/32px-Java_programming_language_logo.svg.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .download-link {
+            background-color: #1d4ed8;
+            color: white;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+            display: block;
+            text-decoration: none;
+        }
+        .download-link:hover {
+            background-color: #1e40af;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+        }
+        .social-icon {
+            transition: transform 0.2s;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        @media (max-width: 640px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+            th, td {
+                padding: 0.5rem;
+            }
+            th {
+                background-color: #e5e7eb;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6 max-w-5xl bg-white shadow-lg rounded-lg">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Plano de Estudo: Java Moderno com Spring Boot</h1>
+        
+        <!-- Credits and Social Media Links -->
+        <div class="text-center bg-gray-50 p-4 rounded-lg mb-6">
+            <p class="text-lg text-gray-700 mb-4">Plano de estudo criado por Marcos Oliveira</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/marcos.rmo" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@marcosoliveira-fm6id?si=e7OBsPtHaMppUvbl" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/marcos.oliveira.390844/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <a href="https://www.kufunda.net/publicdocs/Back-end%20Java%20-%20Microsservi%C3%A7os,%20Spring%20Boot%20e%20Kubernetes%20(Eduardo%20Felipe%20Zambom%20Santana).pdf" target="_blank" rel="noopener noreferrer" class="download-link">BAIXE O LIVRO AQUI</a>
+        
+        <p class="text-lg text-gray-600 mb-4 text-center">Um plano intensivo de 7 semanas para dominar Java 17 e desenvolvimento web com Spring Boot, baseado no livro <em>Livro de Back-end Java</em> por Eduardo Zambom Santana.</p>
+        
+        <h2 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Informações Gerais</h2>
+        <ul class="list-disc pl-6 mb-6 text-gray-600">
+            <li><strong>Livro</strong>: Livro de Back-end Java (Casa do Código, ~200 páginas)</li>
+            <li><strong>Foco</strong>: Java 17, Spring Boot, APIs REST, persistência, microsserviços, segurança</li>
+            <li><strong>Duração</strong>: 7 semanas, 9h30/semana (1h30 Seg–Sex, 2h Sáb–Dom)</li>
+            <li><strong>Ferramentas</strong>: IntelliJ IDEA Community, JDK 17 (<a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Download JDK</a>), Postman</li>
+            <li><strong>Mercado</strong>: Java tem alta demanda (779 vagas vs. 376 para Kotlin, salários R$ 3.000–7.000 para iniciantes)</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Plano de Estudo</h2>
+
+        <!-- Semana 1 -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Semana 1: Fundamentos de Java 17 (Págs. 1–28)</h3>
+        <p class="text-gray-600 mb-4">Objetivo: Aprender sintaxe básica, tipos, controle de fluxo, text blocks e records.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Duração</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Leitura</td>
+                    <td>Págs. 1–6: Introdução ao Java, instalação do JDK 17 e IntelliJ IDEA.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 1–6)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Java para Iniciantes” (DIO); “Configurando Java 17” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=6zXb3z1f3k4" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a>, <a href="https://www.alura.com.br/curso-online-java-primeiros-passos" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Alura (opcional)</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Configure JDK 17 e IntelliJ; crie um programa “Olá, Mundo!”.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Leitura</td>
+                    <td>Págs. 7–12: Variáveis, tipos primitivos, operadores aritméticos e lógicos.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 7–12)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Variáveis e Tipos em Java” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=KlIL63M6eKY" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Escreva um programa para calcular a média de três números.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 13–18: Estruturas de controle (if-else, switch, loops for/while).</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 13–18)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Controle de Fluxo em Java” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5qJDJMUsB8Q" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um programa que classifique uma nota (A, B, C) usando switch.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 19–24: Métodos, escopo de variáveis, text blocks.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 19–24)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Métodos e Text Blocks” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Escreva um método que retorne o triplo de um número; crie um JSON com text block.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 25–28: Records, boas práticas de codificação.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 25–28)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Records no Java 17” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um record `Aluno` (nome, nota) e use em um programa.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 1–18; refaça exercícios de média e notas.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 1–18)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Java 17: Fundamentos Práticos” (YouTube).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Combine média e classificação em um programa com records.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 19–28; pratique text blocks e records.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 19–28)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Revisão Java Básico” (DIO).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Mini-projeto: Lista de alunos em JSON com text blocks.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semana 2 -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Semana 2: Orientação a Objetos (Págs. 29–56)</h3>
+        <p class="text-gray-600 mb-4">Objetivo: Dominar classes, herança, encapsulamento, polimorfismo e interfaces.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Duração</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Leitura</td>
+                    <td>Págs. 29–34: Classes, objetos, construtores.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 29–34)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Classes e Objetos em Java” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=KlIL63M6eKY" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie uma classe `Livro` (título, autor, preço).</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Leitura</td>
+                    <td>Págs. 35–40: Encapsulamento, getters e setters.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 35–40)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Encapsulamento em Java” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Adicione encapsulamento à classe `Livro` com getters/setters.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 41–46: Herança e sobrescrita de métodos.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 41–46)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Herança em Java” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5qJDJMUsB8Q" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie uma hierarquia `Veiculo` → `Moto` com herança.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 47–52: Polimorfismo e métodos abstratos.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 47–52)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Polimorfismo em Java” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Implemente um método polimórfico em `Veiculo` e `Moto`.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 53–56: Interfaces e default methods.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 53–56)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Interfaces em Java” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie uma interface `Vendavel` para `Livro`.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 29–46; pratique herança e encapsulamento.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 29–46)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“POO com Java: Prática” (YouTube).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Projeto: Sistema de livraria com `Livro` e `Veiculo`.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 47–56; pratique interfaces.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 47–56)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Revisão POO” (DIO).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=KlIL63M6eKY" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Mini-projeto: Livraria com interface `Vendavel`.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semana 3 -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Semana 3: Coleções e Expressões Lambda (Págs. 57–84)</h3>
+        <p class="text-gray-600 mb-4">Objetivo: Trabalhar com List, Set, Map, streams e lambdas.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Duração</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Leitura</td>
+                    <td>Págs. 57–62: Listas (ArrayList, LinkedList).</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 57–62)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Listas em Java” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie uma ArrayList de livros e adicione 3 itens.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Leitura</td>
+                    <td>Págs. 63–68: Sets (HashSet, TreeSet) e Maps (HashMap).</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 63–68)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Set e Map em Java” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um HashMap com livros mapeados por ISBN.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 69–74: Introdução a streams e pipeline.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 69–74)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Streams em Java” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Filtre livros com preço acima de R$ 50 usando streams.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 75–80: Expressões lambda e method references.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 75–80)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Lambdas em Java” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Ordene livros por preço usando lambda.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 81–84: Streams avançados (map, reduce, collect).</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 81–84)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Streams Avançados” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=KlIL63M6eKY" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Calcule o preço total de livros com streams e reduce.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 57–74; pratique List e Map.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 57–74)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Coleções Java: Prática” (YouTube).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Projeto: Gerenciador de livraria com List e Map.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 75–84; pratique streams e lambdas.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 75–84)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Revisão Streams e Lambdas” (DIO).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Mini-projeto: Filtragem e ordenação de livros com streams.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semana 4 -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Semana 4: Introdução ao Spring Boot (Págs. 85–112)</h3>
+        <p class="text-gray-600 mb-4">Objetivo: Configurar um projeto Spring Boot e criar uma API básica.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Duração</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Leitura</td>
+                    <td>Págs. 85–90: Introdução ao Spring Boot, configuração inicial.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 85–90)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Primeiros Passos com Spring Boot” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=0jDkh0lGu4s" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um projeto Spring Boot com Spring Initializr.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA, <a href="https://start.spring.io" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Spring Initializr</a></td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Leitura</td>
+                    <td>Págs. 91–96: Criando a primeira API com @RestController.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 91–96)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Criando APIs com Spring Boot” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5qJDJMUsB8Q" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um endpoint `/hello` que retorna “Hello, Spring!”.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 97–102: Controllers e anotações (@GetMapping).</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 97–102)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Controllers no Spring Boot” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um controller para gerenciar uma lista de livros.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 103–108: Gerenciamento de dependências com Maven.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 103–108)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Maven no Spring Boot” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Adicione dependências Spring Web e DevTools ao projeto.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 109–112: Testando APIs com Postman.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 109–112)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Testando APIs com Postman” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=KlIL63M6eKY" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Teste o endpoint `/hello` usando Postman.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA, Postman</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 85–102; pratique criação de APIs.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 85–102)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Spring Boot: Prática” (YouTube).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Projeto: API para listar livros.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 103–112; pratique testes com Postman.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 103–112)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Revisão Spring Boot” (DIO).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Mini-projeto: API com endpoints para livros.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA, Postman</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semana 5 -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Semana 5: APIs REST com Spring Boot (Págs. 113–140)</h3>
+        <p class="text-gray-600 mb-4">Objetivo: Criar APIs REST completas com operações CRUD.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Duração</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Leitura</td>
+                    <td>Págs. 113–118: Conceitos de REST e boas práticas.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 113–118)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“O que é REST” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=L3Z0tGjoJGU" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Planeje endpoints REST para uma API de livraria.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Leitura</td>
+                    <td>Págs. 119–124: Implementando GET com Spring Boot.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 119–124)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Endpoints GET com Spring” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um endpoint GET `/livros` para listar livros.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 125–130: Implementando POST para criação.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 125–130)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Endpoints POST com Spring” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=KlIL63M6eKY" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um endpoint POST `/livros` para adicionar um livro.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 131–136: Implementando PUT e DELETE.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 131–136)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“PUT e DELETE com Spring” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie endpoints PUT `/livros/{id}` e DELETE `/livros/{id}`.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 137–140: Testando APIs REST com Postman.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 137–140)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“APIs REST com Spring Boot” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Teste todos os endpoints CRUD com Postman.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA, Postman</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 113–130; pratique GET e POST.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 113–130)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“REST com Spring: Prática” (YouTube).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Projeto: API REST completa para livraria.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 131–140; pratique PUT, DELETE e testes.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 131–140)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Revisão APIs REST” (DIO).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Mini-projeto: API REST com CRUD completo.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA, Postman</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semana 6 -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Semana 6: Persistência com Spring Data JPA (Págs. 141–168)</h3>
+        <p class="text-gray-600 mb-4">Objetivo: Integrar banco de dados com Spring Data JPA e H2.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Duração</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Leitura</td>
+                    <td>Págs. 141–146: Introdução ao JPA e Spring Data.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 141–146)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“O que é JPA” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=9qXzqX5zY8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Adicione dependência Spring Data JPA ao projeto.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Leitura</td>
+                    <td>Págs. 147–152: Configurando banco H2.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 147–152)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Configurando H2 com Spring” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5qJDJMUsB8Q" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Configure o banco H2 e acesse o console.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 153–158: Criando entidades JPA.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 153–158)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Entidades JPA com Spring” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie uma entidade `Livro` com anotações JPA.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 159–164: Repositórios com Spring Data.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 159–164)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Repositórios com Spring Data” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um repositório para `Livro` com métodos CRUD.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 165–168: Consultas personalizadas com @Query.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 165–168)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Consultas com Spring Data JPA” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=KlIL63M6eKY" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie uma consulta `@Query` para buscar livros por autor.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 141–158; pratique entidades JPA.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 141–158)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“JPA com Spring: Prática” (YouTube).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Projeto: API com entidade `Livro` e repositório.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 159–168; pratique consultas.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 159–168)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Revisão Spring Data JPA” (DIO).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Mini-projeto: API com consultas personalizadas.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Semana 7 -->
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Semana 7: Microsserviços e Segurança (Págs. 169–200)</h3>
+        <p class="text-gray-600 mb-4">Objetivo: Entender microsserviços e proteger APIs com Spring Security.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                    <th>Duração</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Leitura</td>
+                    <td>Págs. 169–174: Conceitos de microsserviços e vantagens.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 169–174)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Introdução a Microsserviços” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Escreva um resumo sobre microsserviços vs. monolitos.</td>
+                    <td>Incluído</td>
+                    <td>Bloco de notas</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Leitura</td>
+                    <td>Págs. 175–180: Criando um microsserviço com Spring Boot.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 175–180)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Criando Microsserviços com Spring” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5vXzqQz8Z8U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Crie um microsserviço para gerenciar livros.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 181–186: Introdução ao Spring Security.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 181–186)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“O que é Spring Security” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=0jDkh0lGu4s" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Adicione Spring Security ao projeto Spring Boot.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 187–192: Configurando autenticação com usuário/senha.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 187–192)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Autenticação com Spring Security” (YouTube).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=5qJDJMUsB8Q" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Implemente autenticação com um usuário fixo.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Leitura</td>
+                    <td>Págs. 193–200: Autorização com roles e boas práticas.</td>
+                    <td>50min</td>
+                    <td>Livro de Back-end Java (págs. 193–200)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo</td>
+                    <td>“Autorização com Spring Security” (DIO).</td>
+                    <td>40min</td>
+                    <td><a href="https://www.youtube.com/watch?v=7YvW8ZgXz4k" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Configure roles para restringir acesso a endpoints.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 169–186; pratique microsserviços e segurança.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 169–186)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Microsserviços e Segurança: Prática” (YouTube).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=8pM83V7M2AM" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Projeto: Microsserviço com autenticação básica.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Leitura/Exercícios</td>
+                    <td>Revise págs. 187–200; pratique autenticação e autorização.</td>
+                    <td>1h</td>
+                    <td>Livro de Back-end Java (págs. 187–200)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vídeo/Projeto</td>
+                    <td>“Revisão Microsserviços e Segurança” (DIO).</td>
+                    <td>1h</td>
+                    <td><a href="https://www.youtube.com/watch?v=9zJ8xY7q2Lc" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Exercício</td>
+                    <td>Mini-projeto: API com autenticação e roles.</td>
+                    <td>Incluído</td>
+                    <td>IntelliJ IDEA</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
